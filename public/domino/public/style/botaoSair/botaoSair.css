@@ -1,0 +1,10 @@
+.btnSair {
+    background-color: #FFC90E;
+    border: 1px solid #ccc;
+    border-radius: 2vh;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    right: 2vh;
+    top: 2vh;
+}

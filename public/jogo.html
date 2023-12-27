@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./domino/public/style/styleGrid/styleGrid.css">
+
+    <link rel="stylesheet" href="./domino/public/style/espacoJogador/espacoJogador.css">
+    <link rel="stylesheet" href="./domino/public/style/espacoJogador/espacoJogadorHorizontal.css">
+    <link rel="stylesheet" href="./domino/public/style/espacoJogador/espacoJogadorVertical.css">
+    <link rel="stylesheet" href="./domino/public/style/espacoJogador/espacoFotoJogador/espacoFotoJogador.css">
+    <link rel="stylesheet" href="./domino/public/style/espacoJogador/espacoPontuacao/espacoPontosJogador.css">
+    <link rel="stylesheet" href="./domino/public/style/botaoPassarVez/botaoaPassarVez.css">
+    <link rel="stylesheet" href="./domino/public/style/botaoSair/botaoSair.css">
+    <link rel="stylesheet" href="./domino/public/style/pecaObjeto/peca.css">
+    <link rel="stylesheet" href="./domino/public/style/jogadorAtual/jogadorAtual.css">
+    <link rel="stylesheet" href="./domino/public/style/tempoRestante/tempoRestante.css">
+
+    <link rel="stylesheet" href="./domino/public/style/modalDeEspera/modalDeEspera.css">
+
+
+    <link rel="stylesheet" href="./domino/public/style/mock-peca/style-mock.css">
+    <title>Domino</title>
+</head>
+
+<body>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Aguarde...</h2>
+            <p>Deve haver 4 jogadores para iniciar a partida</p>
+        </div>
+    </div>
+
+    <div class="primeiroJogador">
+        <div class="tempoRestante"></div>
+        <div class="espacoJogadorHorizontal" id="primeiroJogador">
+            <div class="pontuacao">
+                <div class="pontosJogador">5</div>
+                <div class="pontos">pontos</div>
+            </div>
+            <div class="campoFotoJogador">
+                <img class="fotoJogador" src="./domino/public/img/icones/homem_azul_feliz.svg" alt="jogador1">
+            </div>
+            <div class="variaveisHorizontal">
+                <div class="conjuntoPecas"></div>
+                <div class="dadosHorizontal">
+                    <div class="nome">João</div>
+                    <div class="quantidadePecas"></div>
+                </div>
+            </div>
+        </div>
+        <button class="botaoPassarVez">Passar a vez</button>
+    </div>
+    <div class="segundoJogador">
+        <div class="espacoJogadorVertical" id="segundoJogador">
+            <div class="pontuacao">
+                <div class="pontosJogador">5</div>
+                <div class="pontos">pontos</div>
+            </div>
+            <div class="campoFotoJogador">
+                <img class="fotoJogador" src="./domino/public/img/icones/homem_vermelho_feliz.svg" alt="jogador1">
+            </div>
+            <div class="variaveisVertical">
+                <div class="conjuntoPecas"></div>
+                <div class="dadosVertical">
+                    <div class="quantidadePecas"></div>
+                    <div class="nome">Luis</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="terceiroJogador">
+        <div class="espacoJogadorHorizontal" id="terceiroJogador">
+            <div class="pontuacao">
+                <div class="pontosJogador">5</div>
+                <div class="pontos">pontos</div>
+            </div>
+            <div class="campoFotoJogador">
+                <img class="fotoJogador" src="./domino/public/img/icones/mulher_laranja_feliz.svg" alt="jogador1">
+            </div>
+            <div class="variaveisHorizontal">
+                <div class="conjuntoPecas"></div>
+                <div class="dadosHorizontal">
+                    <div class="nome">Maria</div>
+                    <div class="quantidadePecas"></div>
+                </div>
+            </div>
+        </div>
+        <button class="btnSair" id="sair">Sair</button>
+    </div>
+    <div class="quartoJogador">
+        <div class="espacoJogadorVertical" id="quartoJogador">
+            <div class="pontuacao">
+                <div class="pontosJogador">5</div>
+                <div class="pontos">pontos</div>
+            </div>
+            <div class="campoFotoJogador">
+                <img class="fotoJogador" src="./domino/public/img/icones/mulher_rosa_feliz.svg" alt="jogador1">
+            </div>
+            <div class="variaveisVertical">
+                <div class="conjuntoPecas"></div>
+                <div class="dadosVertical">
+                    <div class="nome">Gabriela</div>
+                    <div class="quantidadePecas"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabuleiro"></div>
+
+    <script src="./domino/public/jogadores/jogador.js"></script>
+
+    <script src="./domino/public/movimento_encaixe_pecas/adicionando_pecas_de_teste.js"></script>
+    <script src="./domino/public/movimento_encaixe_pecas/encaixe.js"></script>
+    <script src="./domino/public/movimento_encaixe_pecas/fixacao.js"></script>
+    <script src="./domino/public/movimento_encaixe_pecas/movimento.js"></script>
+    <script type="module" src="./domino/public/peca/peca.js"></script>
+    <script type="module" src="./domino/public/peca/numeracaoValor.js"></script>
+
+
+    <script type="module" src="./domino/public/grid_pecas/posicionamento_pecas.js"></script>
+    <script type="module" src="./domino/public/turnos/verificacaoMaiorPeca.js"></script>
+    <script type="module" src="./domino/public/turnos/passarAVez.js"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./domino/public/documento-jogo.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.conjuntoPecas {
+    grid-area: conjuntoPecas;
+    display: grid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.peca {
+    background-color: lightblue;
+    text-align: center;
+    height: 100%;
+    white-space: nowrap;
+    border: 1px solid #000;
+    overflow: hidden;
+}

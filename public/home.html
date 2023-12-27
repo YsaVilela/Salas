@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./telaDeInicio/style/resetCss/reset.css">
+    <link rel="stylesheet" href="./telaDeInicio/style/style.css">
+    <link rel="stylesheet" href="./telaDeInicio/style/cardsSalas/card.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <img class="logo" src="./telaDeInicio/img/logoDomino.png">
+    <div class="inserirNome">
+        <p>Digite seu nome</p>
+        <input type="text" name="nome" id="nome" placeholder="Escolha um nome">
+    </div>
+
+    <div class="cards">
+        <div class="card" id="Sala1">
+            <h3>Sala 1</h3>
+            <p>Comporta 4 jogadores</p>
+            <div class="quantidadeJogadores">0/4</div>
+            <button onclick="redirecionar(this)" class="btnEntrar" id="entrarSala">Entrar</button>
+        </div>
+
+        <div class="card" id="Sala2">
+            <h3>Sala 2</h3>
+            <p>Comporta 4 jogadores</p>
+            <div class="quantidadeJogadores">0/4</div>
+            <button onclick="redirecionar(this)" class="btnEntrar" id="entrarSala">Entrar</button>
+        </div>
+
+        <div class="card" id="Sala3">
+            <h3>Sala 3</h3>
+            <p>Comporta 4 jogadores</p>
+            <div class="quantidadeJogadores">0/4</div>
+            <button onclick="redirecionar(this)" class="btnEntrar" id="entrarSala">Entrar</button>
+        </div>
+
+        <div class="card" id="Sala4">
+            <h3>Sala 4</h3>
+            <p>Comporta 4 jogadores</p>
+            <div class="quantidadeJogadores">/4</div>
+            <button onclick="redirecionar(this)" class="btnEntrar" id="entrarSala">Entrar</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./telaDeInicio/documento-home.js" type="module"></script>
+    <script src="./telaDeInicio/socket-front-home.js" type="module"></script>
+    <script src="./telaDeInicio/home.js"></script>
+</body>
+
+</html>

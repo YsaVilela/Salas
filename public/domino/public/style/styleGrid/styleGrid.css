@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Garante que a largura e a altura incluam preenchimento e borda, não apenas o conteúdo */
+}
+
+body {
+    background-color: #008B84;
+    display: grid;
+    grid-template-areas:
+        "terceiroJogador terceiroJogador  terceiroJogador"
+        "segundoJogador  tabuleiro        quartoJogador"
+        "primeiroJogador primeiroJogador  primeiroJogador";
+    grid-template-columns: 15vw 70vw 15vw;
+    grid-template-rows: 15vh 69vh 15vh;
+    overflow: hidden;
+}
+
+.primeiroJogador {
+    grid-area: primeiroJogador;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.segundoJogador {
+    grid-area: segundoJogador;
+    display: flex;
+    align-items: center;
+}
+
+.terceiroJogador {
+    grid-area: terceiroJogador;
+    display: flex;
+    justify-content: center;
+}
+
+.quartoJogador {
+    grid-area: quartoJogador;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tabuleiro {
+    grid-area: tabuleiro;
+    border: solid 5px #00756D
+}
+ 

@@ -1,0 +1,12 @@
+.botaoPassarVez{
+    align-items: center;
+    aspect-ratio: 1;
+    background-color: #FFC90E;
+    border-radius: 2vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+    overflow: hidden;
+    width: 5%;
+}

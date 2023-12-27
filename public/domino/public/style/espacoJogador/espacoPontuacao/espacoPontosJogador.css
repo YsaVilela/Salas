@@ -1,0 +1,18 @@
+.pontuacao{
+    align-items: center;
+    aspect-ratio: 1;
+    background-color: #3D251B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pontosJogador{
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+.pontos{
+    color: #FFFFFF;
+    font-size: 1em;
+}

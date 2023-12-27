@@ -1,0 +1,55 @@
+.espacoJogadorVertical {
+    background-color: #F0DAC3;
+    border-radius: 1vh;
+    display: flex;
+    height: 100%;
+    margin: 2%;
+    overflow: hidden;
+    width: 40%;
+}
+
+.dadosVertical {
+    grid-area: dados;
+    color: #666666;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+}
+
+.variaveisVertical {
+    display: grid;
+    overflow: hidden;
+    grid-template-areas:
+        "conjuntoPecas dados";
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: 80% 15%;
+    width: 100%;
+    height: 100%;
+}
+
+.variaveisVertical .quantidadePecas {
+    writing-mode: vertical-rl;
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.variaveisVertical .nome {
+    writing-mode: vertical-rl;
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+#segundoJogador {
+    flex-direction: column;
+}
+
+#quartoJogador {
+    flex-direction: column-reverse;
+}
+
+

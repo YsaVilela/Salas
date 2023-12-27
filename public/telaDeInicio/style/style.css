@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1478C5;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo {
+    margin-top: 4vh;
+    width: 20vw;
+    height: auto;
+}
+
+.inserirNome {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+    margin: 10px;
+}
+
+.invalido {
+    border: solid 2px #FF0000;
+}
+
+.aviso {
+    color: #8a0101;
+    font-size: 0.8rem;
+}

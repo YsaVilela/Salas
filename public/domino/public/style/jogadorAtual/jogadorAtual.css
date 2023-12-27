@@ -1,0 +1,4 @@
+.jogadorAtual{
+    box-shadow: 0 0 6px 6px rgba(206, 203, 1, 0.685), 0 0 20px 20px rgba(0, 0, 0, 0.1);
+    outline: 10px solid transparent;
+}
