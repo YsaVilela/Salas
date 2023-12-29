@@ -1,4 +1,4 @@
-import {atualizaQuantidadeJogadores, verificarDisponibilidadeSala} from "./socket-front-home.js";
+import { atualizaQuantidadeJogadores, verificarDisponibilidadeSala } from "./socket-front-home.js";
 
 const socket = io('/home');
 

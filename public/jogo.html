@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="./domino/public/style/espacoJogador/espacoJogadorVertical.css">
     <link rel="stylesheet" href="./domino/public/style/espacoJogador/espacoFotoJogador/espacoFotoJogador.css">
     <link rel="stylesheet" href="./domino/public/style/espacoJogador/espacoPontuacao/espacoPontosJogador.css">
+    <link rel="stylesheet" href="./domino/public/style/espacoJogador/jogadorDesaticado.css">
     <link rel="stylesheet" href="./domino/public/style/botaoPassarVez/botaoaPassarVez.css">
     <link rel="stylesheet" href="./domino/public/style/botaoSair/botaoSair.css">
+    <link rel="stylesheet" href="./domino/public/style/botaoSair/botaoSairEspera.css">
     <link rel="stylesheet" href="./domino/public/style/pecaObjeto/peca.css">
     <link rel="stylesheet" href="./domino/public/style/jogadorAtual/jogadorAtual.css">
     <link rel="stylesheet" href="./domino/public/style/tempoRestante/tempoRestante.css">
@@ -29,14 +31,15 @@
         <div class="modal-content">
             <h2>Aguarde...</h2>
             <p>Deve haver 4 jogadores para iniciar a partida</p>
+            <button class="btnSairEspera" id="sairEspera">Deixar partida</button>
         </div>
     </div>
 
     <div class="primeiroJogador">
         <div class="tempoRestante"></div>
-        <div class="espacoJogadorHorizontal" id="primeiroJogador">
+        <div class="jogador espacoPrimeiroJogador espacoJogadorHorizontal" id="primeiroJogador">
             <div class="pontuacao">
-                <div class="pontosJogador">5</div>
+                <div class="pontosJogador">0</div>
                 <div class="pontos">pontos</div>
             </div>
             <div class="campoFotoJogador">
@@ -45,17 +48,17 @@
             <div class="variaveisHorizontal">
                 <div class="conjuntoPecas"></div>
                 <div class="dadosHorizontal">
-                    <div class="nome">João</div>
+                    <div class="nome"></div>
                     <div class="quantidadePecas"></div>
                 </div>
             </div>
         </div>
-        <button class="botaoPassarVez">Passar a vez</button>
+        <button class="botaoPassarVez" id="btnPassarAVez">Passar a vez</button>
     </div>
     <div class="segundoJogador">
-        <div class="espacoJogadorVertical" id="segundoJogador">
+        <div class="jogador espacoSegundoJogador espacoJogadorVertical" id="segundoJogador">
             <div class="pontuacao">
-                <div class="pontosJogador">5</div>
+                <div class="pontosJogador">0</div>
                 <div class="pontos">pontos</div>
             </div>
             <div class="campoFotoJogador">
@@ -65,15 +68,15 @@
                 <div class="conjuntoPecas"></div>
                 <div class="dadosVertical">
                     <div class="quantidadePecas"></div>
-                    <div class="nome">Luis</div>
+                    <div class="nome"></div>
                 </div>
             </div>
         </div>
     </div>
     <div class="terceiroJogador">
-        <div class="espacoJogadorHorizontal" id="terceiroJogador">
+        <div class="jogador espacoTerceiroJogador espacoJogadorHorizontal" id="terceiroJogador">
             <div class="pontuacao">
-                <div class="pontosJogador">5</div>
+                <div class="pontosJogador">0</div>
                 <div class="pontos">pontos</div>
             </div>
             <div class="campoFotoJogador">
@@ -82,7 +85,7 @@
             <div class="variaveisHorizontal">
                 <div class="conjuntoPecas"></div>
                 <div class="dadosHorizontal">
-                    <div class="nome">Maria</div>
+                    <div class="nome"></div>
                     <div class="quantidadePecas"></div>
                 </div>
             </div>
@@ -90,9 +93,9 @@
         <button class="btnSair" id="sair">Sair</button>
     </div>
     <div class="quartoJogador">
-        <div class="espacoJogadorVertical" id="quartoJogador">
+        <div class="jogador espacoQuartoJogador espacoJogadorVertical" id="quartoJogador">
             <div class="pontuacao">
-                <div class="pontosJogador">5</div>
+                <div class="pontosJogador">0</div>
                 <div class="pontos">pontos</div>
             </div>
             <div class="campoFotoJogador">
@@ -101,15 +104,13 @@
             <div class="variaveisVertical">
                 <div class="conjuntoPecas"></div>
                 <div class="dadosVertical">
-                    <div class="nome">Gabriela</div>
+                    <div class="nome"></div>
                     <div class="quantidadePecas"></div>
                 </div>
             </div>
         </div>
     </div>
     <div class="tabuleiro"></div>
-
-    <script src="./domino/public/jogadores/jogador.js"></script>
 
     <script src="./domino/public/movimento_encaixe_pecas/adicionando_pecas_de_teste.js"></script>
     <script src="./domino/public/movimento_encaixe_pecas/encaixe.js"></script>

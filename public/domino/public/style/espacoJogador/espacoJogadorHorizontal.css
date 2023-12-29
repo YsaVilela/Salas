@@ -30,12 +30,12 @@
 }
 
 
-#primeiroJogador {
+.espacoPrimeiroJogador {
     flex-direction: row;
 }
 
 
-#terceiroJogador {
+.espacoTerceiroJogador {
     flex-direction: row-reverse;
 }
 

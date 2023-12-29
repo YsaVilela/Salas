@@ -16,7 +16,7 @@ class PecaDomino {
         const elementoPeca = document.createElement('div');
         elementoPeca.className = `peca-domino ${this.numeros[0]}${this.numeros[1]}`;
         elementoPeca.id = `${this.numeros[0]}${this.numeros[1]}`
-    
+
         const metadeSuperior = document.createElement('div');
         metadeSuperior.className = 'metade-superior';
 
@@ -35,12 +35,15 @@ class PecaDomino {
     }
 }
 
-for (let i = 0; i <= 6; i++) {
-    for (let j = i; j <= 6; j++) {
-        const pecaDomino = new PecaDomino([i, j], true, `status${i}${j}`, `status2${i}${j}`, `direcao${i}${j}`);
-        document.body.appendChild(pecaDomino.getElementoPeca());
-        MeiaPeca({id:`${i}${j}`, numeroSuperior: i,numeroInferior: j});
+function criarPecas(params) {
+    for (let i = 0; i <= 6; i++) {
+        for (let j = i; j <= 6; j++) {
+            const pecaDomino = new PecaDomino([i, j], true, `status${i}${j}`, `status2${i}${j}`, `direcao${i}${j}`);
+            document.body.appendChild(pecaDomino.getElementoPeca());
+            MeiaPeca({ id: `${i}${j}`, numeroSuperior: i, numeroInferior: j });
+        }
     }
+    distribuirPecas();
 }
 
-distribuirPecas();
+export { criarPecas }

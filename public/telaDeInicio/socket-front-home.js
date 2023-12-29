@@ -5,9 +5,9 @@ function atualizaQuantidadeJogadores(nomeSala, quantidadeDeJogadores) {
 
 function verificarDisponibilidadeSala(nomeSala, salas) {
     var estadoSala = salas[nomeSala];
-    if(estadoSala == 'partidaEmAndamento'){
+    if (estadoSala == 'partidaEmAndamento') {
         desativarBotao(nomeSala);
-    }else{
+    } else {
         reativarBotao(nomeSala);
     }
 }
@@ -31,4 +31,4 @@ function desativarBotao(nomeSala) {
     }
 }
 
-export {atualizaQuantidadeJogadores, verificarDisponibilidadeSala}
+export { atualizaQuantidadeJogadores, verificarDisponibilidadeSala }

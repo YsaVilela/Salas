@@ -35,6 +35,4 @@ function passarVez() {
     proximoJogador.classList.add('jogadorAtual');
 }
 
-document.querySelector('.botaoPassarVez').addEventListener('click', passarVez);
-
-export { iniciarTempo };
+export { iniciarTempo, passarVez };

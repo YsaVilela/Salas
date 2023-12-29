@@ -44,11 +44,11 @@
     transform: rotate(180deg);
 }
 
-#segundoJogador {
+.espacoSegundoJogador {
     flex-direction: column;
 }
 
-#quartoJogador {
+.espacoQuartoJogador {
     flex-direction: column-reverse;
 }
 
